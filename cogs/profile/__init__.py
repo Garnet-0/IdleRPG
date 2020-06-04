@@ -196,10 +196,7 @@ IdleRPG is a global bot, your characters are valid everywhere"""
                         left_hand = i["name"]
 
             color = profile["colour"]
-            color = (
-                f"rgba({color['red']}, {color['green']}, {color['blue']},"
-                f" {color['alpha']})"
-            )
+            color = [color["red"], color["green"], color["blue"], color["alpha"]]
 
             url = f"{self.bot.config.okapi_url}/api/genprofile"
 
