@@ -205,7 +205,7 @@ IdleRPG is a global bot, your characters are valid everywhere"""
 
             async with self.bot.trusted_session.post(
                 url,
-                data={
+                json={
                     "name": profile["name"],
                     "color": color,
                     "image": profile["background"],
