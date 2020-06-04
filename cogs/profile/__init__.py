@@ -213,11 +213,11 @@ IdleRPG is a global bot, your characters are valid everywhere"""
                     "classes": profile["class"],
                     "damage": sworddmg,
                     "defense": shielddef,
-                    "swordName": right_hand,
-                    "shieldName": left_hand,
+                    "sword_name": right_hand,
+                    "shield_name": left_hand,
                     "level": rpgtools.xptolevel(profile["xp"]),
                     "money": f"{profile['money']}",
-                    "pvpWins": f"{profile['pvpwins']}",
+                    "pvp_wins": f"{profile['pvpwins']}",
                     "marriage": i
                     if (
                         i := await rpgtools.lookup(
